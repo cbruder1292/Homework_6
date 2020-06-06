@@ -1,0 +1,18 @@
+#city-button {
+    background-color: rgb(62, 75, 195); 
+    border: 5px;
+    color: white;
+    padding: 15px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+  #city-input {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  

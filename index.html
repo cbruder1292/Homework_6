@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Weather Report</title>
+  <link rel="stylesheet" href="style.css">'
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <ul class="nav justify-content-center bg-dark text-white">
+    <li class="nav-item">
+      <h1>Weather Dashboard</h1>
+    </li>
+  </ul>
+
+  <div class="container"></div>
+    <div class="row">
+      <div class="col-md-5 col-sm-12 citySearch">
+        <h2><strong>Search for a city</strong></h2>
+        <div>
+          <input type="text" id="city-input"><br>
+          <input id="city-button" type="submit" value="Search">
+        </div>
+      </div>
+      <div class="col-md-7 col-sm-12 weatherDisplay">
+        <h2>Weather</h2>
+        <div style="display:none;" id="currentWeather">
+          <h2>Today's Forecast:</h2>
+        <p id="temperature"></p>
+        <p id="humidity"></p>
+        <p id="windSpeed"></p>
+        <p id="UV"></p>
+      </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div style="display:none;" id="forecast">
+    <h2>5 Day Forecast</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2">
+          <h3>Day One</h3>
+          <p id="dayOneTemp"></p>
+          <p id="dayOneHumidity"></p>
+        </div>
+        <div class="col-lg-2">
+          <h3>Day Two</h3>
+          <p id="dayTwoTemp"></p>
+          <p id="dayTwoHumidity"></p>
+        </div>
+        <div class="col-lg-2">
+          <h3>Day Three</h3>
+          <p id="dayThreeTemp"></p>
+          <p id="dayThreeHumidity"></p>
+        </div>
+        <div class="col-lg-2">
+          <h3>Day Four</h3>
+          <p id="dayFourTemp"></p>
+          <p id="dayFourHumidity"></p>
+        </div>
+        <div class="col-lg-2">
+          <h3>Day Five</h3>
+          <p id="dayFiveTemp"></p>
+          <p id="dayFiveHumidity"></p>
+        </div>
+      </div>
+
+    </div>
+    
+
+
+  </div>
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="script.js"></script>
+</body>
