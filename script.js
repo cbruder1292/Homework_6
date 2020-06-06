@@ -22,7 +22,7 @@ $("#city-button").on("click", function () {
 function searchWeather(data) {
     console.log(data);
 
-    var currentWeather = "http://api.openweathermap.org/data/2.5/weather?q=" + data + "&APPID=7a00d594aafd4938f9afdf2e68c6668b";
+    var currentWeather = "https://api.openweathermap.org/data/2.5/weather?q=" + data + "&APPID=7a00d594aafd4938f9afdf2e68c6668b";
 
 
     $.ajax({
@@ -48,7 +48,7 @@ function searchWeather(data) {
 
 function searchForecast(data) {
     console.log(data);
-    var forecastWeather = "http://api.openweathermap.org/data/2.5/forecast?q=" + data + "&appid=7a00d594aafd4938f9afdf2e68c6668b";
+    var forecastWeather = "https://api.openweathermap.org/data/2.5/forecast?q=" + data + "&appid=7a00d594aafd4938f9afdf2e68c6668b";
 
     $.ajax({
         url: forecastWeather,
